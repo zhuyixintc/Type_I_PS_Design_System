@@ -1,4 +1,4 @@
-#Type_I_PS_Assembly_System
+# Type_I_PS_Assembly_System
 We couple a graph neural network-based (MPNN) surrogate for excited-state properties with a DQN-based fragment assembly system that optimizes toward Type I PSs.
 
 ## Paper
