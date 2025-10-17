@@ -13,8 +13,3 @@ Assembly System for Type I Photosensitizers via Optimization of Excited-State Pr
 - CUDA=11.2
 - TensorFlow=2.10
 
-## UI Download
-Baidu Drive: 
-- Link：[https://pan.baidu.com/s/1Fy8BsXL-1tcP-cK2vw-5GA ](https://pan.baidu.com/s/1o0Jfu1jwXwETiDIwMcufAw)
-- Password：7777
-
