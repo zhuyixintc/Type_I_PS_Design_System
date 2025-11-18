@@ -1,15 +1,51 @@
-# Type_I_PS_Assembly_System
-We couple a graph neural network-based (MPNN) surrogate for excited-state properties with a DQN-based fragment assembly system that optimizes toward Type I PSs.
+# Type_I_PS_Design_System
+We couple a graph neural network-based surrogate for excited-state properties estimation with a DQN-based fragment assembly system that search molecules toward Type I PSs.
 
-## Paper
-Assembly System for Type I Photosensitizers via Optimization of Excited-State Properties
-
-## Workflow
-<img width="2173" height="435" alt="Picture1" src="https://github.com/user-attachments/assets/baa87ae3-d879-4c1f-8697-805cd1c54df3" />
-
+<p align="left">
+<img width="330" height="294" alt="image" src="https://github.com/user-attachments/assets/c2fc7709-bd66-4838-89a6-4d3c8a1ac6ce" />
+</p>
 
 ## Requirements
-- Pyhton=3.9 
+- Pyhton=3.9.7
 - CUDA=11.2
-- TensorFlow=2.10
+- TensorFlow=2.10.1
+- RDKit=2022.03.5
 
+## Installation
+- conda create -n typecips python=3.9.7 -y
+- conda activate typecips
+- conda install -c conda-forge rdkit=2022.03.5 -y
+- pip install tensorflow==2.10.1
+
+## Code Structure
+```text
+Type_I_PS_Design_System/
+├─ data/
+│  └─ additional_data.csv
+├─ molecular_generation/
+│  └─ generate_molecules.py
+├─ property_prediction/
+│  ├─ models/
+│  │  ├─ DataProcessing.py
+│  │  ├─ Encoder.py
+│  │  ├─ EncoderLayer.py
+│  │  ├─ ModelFinetune.py
+│  │  ├─ ModelPretrain.py
+│  │  └─ MultiHeadAttention.py
+│  ├─ pre_train.py
+│  └─ fine_tune.py
+└─ README.md
+```
+## Workflow
+- Your own data
+- python property_prediction/pre_train.py
+- python property_prediction/fine_tune.py
+- python molecular_generation/generate_molecules.py
+- Screening
+
+## UI download
+- Link: https://pan.baidu.com/s/1wSw-tA-zLftS6x3AsOjS2Q
+- Password: 7777 
+
+## Acknowledgement
+This work is partially built on MG-BERT and uses a subset of ChemFluor. We deeply grateful to the authors for making their code and data publicly available
