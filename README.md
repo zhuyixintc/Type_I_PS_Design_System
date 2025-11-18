@@ -20,32 +20,29 @@ We couple a graph neural network-based surrogate for excited-state properties es
 ## Code Structure
 ```text
 Type_I_PS_Design_System/
-├─ data/
-│  └─ additional_data.csv
-├─ molecular_generation/
-│  └─ generate_molecules.py
-├─ property_prediction/
-│  ├─ models/
-│  │  ├─ DataProcessing.py
-│  │  ├─ Encoder.py
-│  │  ├─ EncoderLayer.py
-│  │  ├─ ModelFinetune.py
-│  │  ├─ ModelPretrain.py
-│  │  └─ MultiHeadAttention.py
-│  ├─ pre_train.py
-│  └─ fine_tune.py
+├─ models/
+│  ├─ agent.py
+│  ├─ buffer.py
+│  ├─ data_load.py
+│  ├─ environment.py
+│  ├─ features.py
+│  ├─ molecular_generation.py
+│  ├─ mpnn_model.py
+│  ├─ predictor.py
+│  ├─ train_mpnn.py
+│  └─ utils.py
+├─ run_dqn.py
+├─ run_mpnn.py
 └─ README.md
 ```
 ## Workflow
-- Your own data
-- python property_prediction/pre_train.py
-- python property_prediction/fine_tune.py
-- python molecular_generation/generate_molecules.py
-- Screening
+- Your own data and define your targets
+- python run_mpnn.py
+- python run_dqn.py
 
 ## UI download
 - Link: https://pan.baidu.com/s/1wSw-tA-zLftS6x3AsOjS2Q
 - Password: 7777 
 
 ## Acknowledgement
-This work is partially built on MG-BERT and uses a subset of ChemFluor. We deeply grateful to the authors for making their code and data publicly available
+This work is partially built on MolDQN and uses a subset of xTB-ML-data. We deeply grateful to the authors for making their code and data publicly available.
