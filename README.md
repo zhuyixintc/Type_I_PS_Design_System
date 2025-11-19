@@ -41,7 +41,7 @@ Type_I_PS_Design_System/
 - python run_dqn.py
 
 ## UI download
-- Link: https://pan.baidu.com/s/1wSw-tA-zLftS6x3AsOjS2Q
+- Link: https://pan.baidu.com/s/1kIcsqaMkwo0-yIOZURK7dw
 - Password: 7777 
 
 ## Acknowledgement
