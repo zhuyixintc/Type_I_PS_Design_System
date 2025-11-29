@@ -46,3 +46,5 @@ Type_I_PS_Design_System/
 
 ## Acknowledgement
 This work is partially built on MolDQN and uses a subset of xTB-ML-data. We deeply grateful to the authors for making their code and data publicly available.
+
+The dataset and trained models will be made available on GitHub upon publication.
